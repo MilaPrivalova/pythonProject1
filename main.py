@@ -28,17 +28,33 @@
 # причём X ≠ 0 и Y ≠ 0 и выдаёт номер четверти плоскости, в которой находится эта точка
 # (или на какой оси она находится).
 
-x = int(input("Введите число x "))
-y = int(input("Введите число y "))
-if x > 0 and y > 0:
-    print(f'x = {x}; y = {y} -> I четверть')
-elif x < 0 and y > 0:
-    print(f'x = {x}; y = {y} -> II четверть')
-elif x < 0 and y < 0:
-    print(f'x = {x}; y = {y} -> III четверть')
-elif x > 0 and y < 0:
-    print(f'x = {x}; y = {y} -> IV четверть')
-else:
-    if x == 0 or y == 0:
-        print('Некорректный ввод данных')
-print()
+# x = int(input("Введите число x "))
+# y = int(input("Введите число y "))
+# if x > 0 and y > 0:
+#    print(f'x = {x}; y = {y} -> I четверть')
+# elif x < 0 and y > 0:
+#    print(f'x = {x}; y = {y} -> II четверть')
+# elif x < 0 and y < 0:
+#    print(f'x = {x}; y = {y} -> III четверть')
+# elif x > 0 and y < 0:
+#    print(f'x = {x}; y = {y} -> IV четверть')
+# else:
+#    if x == 0 or y == 0:
+#        print('Некорректный ввод данных')
+# print()
+
+# 4.Напишите программу, которая по заданному номеру четверти,
+# оказывает диапазон возможных координат точек в этой четверти (x и y).
+
+n = int(input("Напишите номер четверти "))
+
+if n < 1 or n > 4:
+     print('Введено не правильное значение')
+elif n == 1:
+     print('x > 0 and y > 0')
+elif n == 2:
+     print('x < 0 and y > 0')
+elif n == 3:
+     print('x < 0 and y < 0')
+elif n == 4:
+     print('x > 0 and y < 0')
